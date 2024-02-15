@@ -32,7 +32,12 @@ export default function SelectedProject({
           {project.description}
         </p>
       </header>
-      <Tasks onAddTask={onAddTask} onDeleteTask={onDeleteTask} tasks={tasks} />
+      <Tasks
+        onAddTask={onAddTask}
+        onDeleteTask={onDeleteTask}
+        tasks={tasks}
+        currentProjectId={project.id}
+      />
     </div>
   );
 }
